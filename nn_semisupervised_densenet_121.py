@@ -169,9 +169,6 @@ def train_net(train, val, unsupervised, model, name):
 
 if __name__ == "__main__":
     for i, ((train_idx, val_idx), (train_idx_unsupervised, val_idx_unsupervised)) in enumerate(zip(supervised_split, unsupervised_split)):
-        if i < 1:
-            continue
-
         name = os.path.basename(sys.argv[0])[:-3] + '-split_' + str(i)
         train_net(
             labels_df.ix[train_idx],

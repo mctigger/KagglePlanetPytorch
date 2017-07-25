@@ -1,0 +1,9 @@
+*
+
+!*.py
+!*.csv
+!.gitignore
+!logs
+!submissions
+!submissions/*
+!ensemble_weights/*

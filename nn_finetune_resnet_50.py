@@ -117,24 +117,6 @@ def train_net(train, val, model, name):
 
         return current_lrs
 
-    """old and 0.0841
-    def schedule(current_epoch, current_lrs, **logs):
-        lrs = [1e-3, 1e-4, 0.5e-4, 1e-5, 0.5e-5]
-        epochs = [0, 2, 6, 12, 16]
-
-        for lr, epoch in zip(lrs, epochs):
-            if current_epoch >= epoch:
-                current_lrs[5] = lr
-                if current_epoch >= 4:
-                    current_lrs[4] = lr * 1.0
-                    current_lrs[3] = lr * 1.0
-                    current_lrs[2] = lr * 1.0
-                    current_lrs[1] = lr * 0.1
-                    current_lrs[0] = lr * 0.05
-
-        return current_lrs
-    """
-
     trainer.set_callbacks([
         callbacks.ModelCheckpoint(
             paths.models,
