@@ -5,11 +5,12 @@ For questions refere to https://www.kaggle.com/c/planet-understanding-the-amazon
 
 ### Requirements
 Basic requirements are
-  *Scitkit-Learn
-  *Scikit-Image
-  *Torchsample
-  *Pytorch
-  *XGBoost
+  * Scitkit-Learn
+  * Scikit-Image
+  * Numpy, Scipy
+  * Torchsample
+  * Pytorch
+  * XGBoost
 
 This list may not be exhaustive!
 
